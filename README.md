@@ -1,6 +1,6 @@
 ## Simple Go-based webshell for Docker
-By default http server listens on port 9090. <br />
-If using GET commands have to be seperared by comma symbol i.e. `ls,-al,|,grep,Dockerfile`<br />
+By default http server listens port 9090. <br />
+If using GET commands have to be seperated by comma symbol i.e. `ls,-al,|,grep,Dockerfile`<br />
 If using POST format: 
 ```json
 {"command" : "ls -al | grep Dockerfile"}
@@ -29,7 +29,7 @@ curl -XGET <localhost>:9090/python3,run.py
 ```
 - Python3 direct command execution
 ```sh
-curl -XGET <localhost>:9090/python3,-c,'print("foo")'
+curl -XGET <localhost>:9090/python3,-c,\'print\(\"foo\"\)\'
 ```
 2. POST
 - Shell command output:
